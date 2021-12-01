@@ -10,10 +10,14 @@
 /[Ll]ogs/
 /[Mm]emoryCaptures/
 
-# Ignore files
+# ------------------
 .idea/
 /[Aa]ssets/Varwin
+/[Aa]ssets/Varwin.meta
 /[Aa]ssets/SteamVR_Input
+/[Aa]ssets/SteamVR_Input.meta
+*.json
+# ------------------
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
