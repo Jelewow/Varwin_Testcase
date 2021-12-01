@@ -12,11 +12,18 @@
 
 # ------------------
 .idea/
-/[Aa]ssets/Varwin
+/[Aa]ssets/Varwin/
 /[Aa]ssets/Varwin.meta
-/[Aa]ssets/SteamVR_Input
+/[Aa]ssets/SteamVR_Input/
 /[Aa]ssets/SteamVR_Input.meta
 *.json
+.json
+/actions.json
+/application_generated_unity_varwinclient_exe_binding_holographic_controller.json
+/application_generated_unity_varwinclient_exe_binding_knuckles.json
+/application_generated_unity_varwinclient_exe_binding_oculus_touch.json
+/application_generated_unity_varwinclient_exe_binding_vive_controller.json
+
 # ------------------
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
