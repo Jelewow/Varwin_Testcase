@@ -61,9 +61,9 @@ crashlytics-build.properties
 # ------------------
 .idea/
 /[Aa]ssets/Varwin/
-/[Aa]ssets/Varwin.meta/
+/Assets/Varwin.meta
 /[Aa]ssets/SteamVR_Input/
-/[Aa]ssets/SteamVR_Input.meta/
+/Assets/SteamVR_Input.meta
 .json
 actions.json
 application_generated_unity_varwinclient_exe_binding_holographic_controller.json
