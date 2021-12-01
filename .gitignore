@@ -10,6 +10,11 @@
 /[Ll]ogs/
 /[Mm]emoryCaptures/
 
+# Ignore files
+.idea/
+/[Aa]ssets/Varwin
+/[Aa]ssets/SteamVR_Input
+
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
 
