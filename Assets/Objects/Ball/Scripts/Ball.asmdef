@@ -1,0 +1,10 @@
+﻿{
+    "name": "Ball_cd1a41fd5e3742c38ab30d93dbcbff28",
+    "references": [
+        "VarwinCore"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}
