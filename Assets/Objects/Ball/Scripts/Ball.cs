@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using Varwin.Public;
 
-namespace Varwin.Types.Ball
+namespace Varwin.Types.BowlingBall
 {
     [VarwinComponent(English: "Bowling ball", Russian: "Шар для боулинга")]
     [RequireComponent(typeof(Rigidbody))]
@@ -13,6 +13,8 @@ namespace Varwin.Types.Ball
 
         private BallThrowLogic _ballThrowLogic;
         private Rigidbody _rigidbody;
+
+        public float Velocity => _rigidbody.velocity.magnitude;
 
         private void Awake()
         {

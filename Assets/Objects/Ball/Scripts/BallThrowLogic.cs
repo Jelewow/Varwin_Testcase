@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Varwin.Types.Ball
+namespace Varwin.Types.BowlingBall
 {
     public class BallThrowLogic
     {

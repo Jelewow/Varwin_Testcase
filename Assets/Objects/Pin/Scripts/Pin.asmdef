@@ -1,0 +1,15 @@
+{
+    "name": "ObjectClassName_a3415a3203ee4061a660f53cd3016f65",
+    "references": [
+        "VarwinCore",
+        "Ball_cd1a41fd5e3742c38ab30d93dbcbff28"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}
