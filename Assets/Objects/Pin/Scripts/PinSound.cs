@@ -5,12 +5,12 @@ namespace Varwin.Types.BowlingPin
 {
     [RequireComponent(typeof(AudioSource))]
     [RequireComponent(typeof(PinCollisionHandler))]
-    public class PinSoundHandler : MonoBehaviour
+    public class PinSound : MonoBehaviour
     {
         private const int MinVolume = 0;
-        private const int MaxVolume = 1;
-        private const int SpeedNormalizeFactor = 4;
-        
+        private const float MaxVolume = 0.8f;
+        private const int SpeedNormalizeFactor = 24;
+
         [SerializeField] private AudioClip _hit;
         [SerializeField] private AudioClip _fall;
 
@@ -35,8 +35,8 @@ namespace Varwin.Types.BowlingPin
 
         private void OnCollisionEnter(Collision other)
         {
-            Ball ball = other.gameObject.GetComponent<Ball>();
-            if (ball == null) return;
+            Bowl ball = other.gameObject.GetComponent<Bowl>();
+            if ((object)ball == null) return;
 
             float volume = Mathf.Clamp(ball.Velocity / SpeedNormalizeFactor, MinVolume, MaxVolume);
             PlaySound(_hit, volume);
@@ -49,7 +49,6 @@ namespace Varwin.Types.BowlingPin
 
         private void PlaySound(AudioClip sound, float volume)
         {
-            _audioSource.volume = volume;
             _audioSource.PlayOneShot(sound, volume);
         }
     }

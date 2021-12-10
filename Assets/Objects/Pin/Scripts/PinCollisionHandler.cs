@@ -7,42 +7,25 @@ namespace Varwin.Types.BowlingPin
     {
         private const float FallAngle = 45f;
 
-        private int _layerMask;
+        public bool IsStay { get; private set; }
 
         public event Action PinFallen;
         
-        private void Start()
-        {
-            _layerMask = ~(1 << 15);
-        }
-
         private void FixedUpdate()
         {
-            FirstWayAngle();
-            //SecondWayRaycast();
+            CheckFalling();
         }
 
-        private void FirstWayAngle()
+        private void CheckFalling()
         {
-            float angle = Vector3.Angle(transform.up, Vector3.up);
-            if (!(angle >= FallAngle)) return;
-
-            PinFallen?.Invoke();
-            enabled = false;
-        }
-
-        private void SecondWayRaycast()
-        {
-            bool isIntersepted = Physics.Raycast(transform.position, -transform.up, 0.2f, _layerMask);
-            if (isIntersepted) return;
+            float currentAngle = Vector3.Angle(transform.up, Vector3.up);
+            IsStay = currentAngle >= FallAngle;
+            if (!IsStay) return;
 
             PinFallen?.Invoke();
             enabled = false;
         }
         
-        private void OnDisable()
-        {
-            print("disabled");
-        }
+        private void OnDisable() {}
     }
 }

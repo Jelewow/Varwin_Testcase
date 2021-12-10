@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7803551005604035644
+--- !u!1 &1584248127330766219
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,50 +8,51 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7803551005604061212}
-  - component: {fileID: 7803551005602766908}
-  - component: {fileID: 7803551005601768188}
-  - component: {fileID: 114970611565505142}
-  - component: {fileID: 6683598618155086062}
-  - component: {fileID: 135832861515345990}
-  - component: {fileID: 3816130343721099524}
-  - component: {fileID: 2658570033635492732}
+  - component: {fileID: 1584248127331193259}
+  - component: {fileID: 1584248127329866123}
+  - component: {fileID: 1584248127328768843}
+  - component: {fileID: 2699697439096930649}
+  - component: {fileID: 8670900741863965169}
+  - component: {fileID: 1041952238817995115}
+  - component: {fileID: 363330529413330548}
+  - component: {fileID: 114716496851058724}
+  - component: {fileID: 751533423696266430}
   m_Layer: 0
-  m_Name: Ball
+  m_Name: Bowl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7803551005604061212
+--- !u!4 &1584248127331193259
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7803551005604035644}
+  m_GameObject: {fileID: 1584248127330766219}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.10696169, z: 0}
+  m_LocalPosition: {x: 1.987325, y: 0.097072326, z: 3.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &7803551005602766908
+--- !u!33 &1584248127329866123
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7803551005604035644}
+  m_GameObject: {fileID: 1584248127330766219}
   m_Mesh: {fileID: 4300000, guid: 7850efe8c695e054ab56eb2e5db192d5, type: 3}
---- !u!23 &7803551005601768188
+--- !u!23 &1584248127328768843
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7803551005604035644}
+  m_GameObject: {fileID: 1584248127330766219}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -84,13 +85,42 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &114970611565505142
+--- !u!54 &2699697439096930649
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584248127330766219}
+  serializedVersion: 2
+  m_Mass: 15
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!135 &8670900741863965169
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584248127330766219}
+  m_Material: {fileID: 13400000, guid: b9a7c4dcd5212b94bb75b400e05a71b0, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.106961064
+  m_Center: {x: 0, y: 0, z: -0.0000000037252903}
+--- !u!114 &1041952238817995115
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7803551005604035644}
+  m_GameObject: {fileID: 1584248127330766219}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b220ea0c852a049499171b51c58596c1, type: 3}
@@ -99,26 +129,22 @@ MonoBehaviour:
   ConfigBlockly: 
   ConfigAssetBundle: 
   Icon: {fileID: 0}
-  Name: Ball
+  Name: Bowl
   DisplayNames:
     LocalizationStrings:
     - key: 10
-      value: Bowling ball
-    - key: 30
-      value: "\u0428\u0430\u0440 \u0434\u043B\u044F \u0431\u043E\u0443\u043B\u0438\u043D\u0433\u0430"
+      value: Bowling Ball
     IsValidDictionary: 1
   Description:
     LocalizationStrings:
     - key: 10
-      value: Bowling ball
-    - key: 30
-      value: "\u0428\u0430\u0440 \u0434\u043B\u044F \u0431\u043E\u0443\u043B\u0438\u043D\u0433\u0430"
+      value: Bowling Ball description
     IsValidDictionary: 1
   AssetBundleParts: []
-  Prefab: Assets/Objects/Ball/Ball.prefab
-  PrefabGuid: a6f1f30fae6527447b752fa064a7dd45
-  Guid: ca3aa6ed-9c4e-499f-be6a-3b039916f2b0
-  RootGuid: cd1a41fd-5e37-42c3-8ab3-0d93dbcbff28
+  Prefab: Assets/Objects/Bowl/Bowl.prefab
+  PrefabGuid: 500263933e2508844a9bc6099430bf4e
+  Guid: 6827cd89-15f9-47a0-904e-3a0795ce0aee
+  RootGuid: 6827cd89-15f9-47a0-904e-3a0795ce0aee
   Locked: 0
   Embedded: 0
   SourcesIncluded: 0
@@ -130,49 +156,37 @@ MonoBehaviour:
   AuthorUrl: 
   LicenseCode: cc-by
   LicenseVersion: 4.0
-  BuiltAt: 06.12.2021 17:02:35 +03:00
+  BuiltAt: 10.12.2021 18:19:40 +03:00
   CurrentVersionWasBuilt: 0
   CurrentVersionWasBuiltAsMobileReady: 0
   Components:
     ComponentReferences:
+    - Name: Bowl_0
+      Component: {fileID: 363330529413330548}
     - Name: InteractableObjectBehaviour_0
-      Component: {fileID: 3816130343721099524}
---- !u!54 &6683598618155086062
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7803551005604035644}
-  serializedVersion: 2
-  m_Mass: 15
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 1
---- !u!135 &135832861515345990
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7803551005604035644}
-  m_Material: {fileID: 13400000, guid: b9a7c4dcd5212b94bb75b400e05a71b0, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.106961064
-  m_Center: {x: 0, y: 0, z: -0.0000000037252903}
---- !u!114 &3816130343721099524
+      Component: {fileID: 114716496851058724}
+--- !u!114 &363330529413330548
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7803551005604035644}
+  m_GameObject: {fileID: 1584248127330766219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64d1d8282ec346c4aa5d2d9307d2c175, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _friction: 0
+  _mass: 15
+  _throwForce: 9000
+--- !u!114 &114716496851058724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584248127330766219}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de7338d1ff64bbc44bfbd17b39fb65da, type: 3}
@@ -199,16 +213,16 @@ MonoBehaviour:
   OnTouchEnded:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &2658570033635492732
+--- !u!114 &751533423696266430
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7803551005604035644}
+  m_GameObject: {fileID: 1584248127330766219}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e0fef5926f5abc4abda01eb169b6e87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Id: 25934
+  Id: 50594

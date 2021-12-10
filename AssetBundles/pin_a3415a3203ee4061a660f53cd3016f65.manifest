@@ -1,0 +1,58 @@
+ManifestFileVersion: 0
+CRC: 4078230724
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 13c5c55dbfd5641cae764c4a24a1db11
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af566e173ed2a1b13109e7560d21ab7f
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 82
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7b3696f37de99f64ab62fd83d8cc5d01, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ced55316a09b8d2469db254029234f78, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d85f51a80f9b42e46be3c565845a6e37, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8e0fef5926f5abc4abda01eb169b6e87, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b220ea0c852a049499171b51c58596c1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1d79e9eca97e4ca29afce3504f87ee8f, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 134
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/VarwinTemp/Pin/Pin.prefab
+Dependencies: []

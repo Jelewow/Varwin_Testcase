@@ -4,7 +4,6 @@ namespace Varwin.Types.BowlingBall
 {
     public class BallThrowLogic
     {
-        private Camera _playerCamera;
         private Transform _viewDirection;
         
         public void GrabStart(GrabingContext context)
