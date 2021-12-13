@@ -13,11 +13,10 @@ GameObject:
   - component: {fileID: 1584248127328768843}
   - component: {fileID: 2699697439096930649}
   - component: {fileID: 8670900741863965169}
-  - component: {fileID: 1041952238817995115}
   - component: {fileID: 363330529413330548}
-  - component: {fileID: 114716496851058724}
+  - component: {fileID: 1041952238817995115}
   - component: {fileID: 751533423696266430}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Bowl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +99,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!135 &8670900741863965169
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -114,57 +113,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.106961064
   m_Center: {x: 0, y: 0, z: -0.0000000037252903}
---- !u!114 &1041952238817995115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1584248127330766219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b220ea0c852a049499171b51c58596c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ConfigBlockly: 
-  ConfigAssetBundle: 
-  Icon: {fileID: 0}
-  Name: Bowl
-  DisplayNames:
-    LocalizationStrings:
-    - key: 10
-      value: Bowling Ball
-    IsValidDictionary: 1
-  Description:
-    LocalizationStrings:
-    - key: 10
-      value: Bowling Ball description
-    IsValidDictionary: 1
-  AssetBundleParts: []
-  Prefab: Assets/Objects/Bowl/Bowl.prefab
-  PrefabGuid: 500263933e2508844a9bc6099430bf4e
-  Guid: 6827cd89-15f9-47a0-904e-3a0795ce0aee
-  RootGuid: 6827cd89-15f9-47a0-904e-3a0795ce0aee
-  Locked: 0
-  Embedded: 0
-  SourcesIncluded: 0
-  MobileReady: 0
-  DisableSceneLogic: 0
-  AddBehavioursAtRuntime: 0
-  AuthorName: Anonymous
-  AuthorEmail: 
-  AuthorUrl: 
-  LicenseCode: cc-by
-  LicenseVersion: 4.0
-  BuiltAt: 10.12.2021 18:19:40 +03:00
-  CurrentVersionWasBuilt: 0
-  CurrentVersionWasBuiltAsMobileReady: 0
-  Components:
-    ComponentReferences:
-    - Name: Bowl_0
-      Component: {fileID: 363330529413330548}
-    - Name: InteractableObjectBehaviour_0
-      Component: {fileID: 114716496851058724}
 --- !u!114 &363330529413330548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,7 +128,7 @@ MonoBehaviour:
   _friction: 0
   _mass: 15
   _throwForce: 9000
---- !u!114 &114716496851058724
+--- !u!114 &1041952238817995115
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -189,30 +137,54 @@ MonoBehaviour:
   m_GameObject: {fileID: 1584248127330766219}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de7338d1ff64bbc44bfbd17b39fb65da, type: 3}
+  m_Script: {fileID: 11500000, guid: b220ea0c852a049499171b51c58596c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isGrabbable: 1
-  _isUsable: 0
-  _isTouchable: 0
-  OnGrabStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  OnGrabEnded:
-    m_PersistentCalls:
-      m_Calls: []
-  OnUseStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  OnUseEnded:
-    m_PersistentCalls:
-      m_Calls: []
-  OnTouchStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  OnTouchEnded:
-    m_PersistentCalls:
-      m_Calls: []
+  ConfigBlockly: "{\"Name\":{\"en\":\"Bowl\",\"ru\":\"\u0428\u0430\u0440 \u0434\u043B\u044F
+    \u0431\u043E\u0443\u043B\u0438\u043D\u0433\u0430\"},\"Description\":{\"en\":\"Bowl\",\"ru\":\"\u0428\u0430\u0440
+    \u0434\u043B\u044F \u0431\u043E\u0443\u043B\u0438\u043D\u0433\u0430\"},\"Guid\":\"1e0fc864-22a9-41ab-a9bd-33ed292aa774\",\"RootGuid\":\"6827cd89-15f9-47a0-904e-3a0795ce0aee\",\"Locked\":false,\"Embedded\":false,\"MobileReady\":false,\"SourcesIncluded\":false,\"DisableSceneLogic\":false,\"Config\":{\"type\":\"Bowl_6827cd8915f947a0904e3a0795ce0aee.BowlWrapper\",\"blocks\":[{\"name\":\"ThrowForceGetter\",\"type\":\"getter\",\"items\":[{\"i18n\":{\"en\":\"Throw
+    force\",\"ru\":\"\u0421\u0438\u043B\u0430 \u0431\u0440\u043E\u0441\u043A\u0430\"},\"property\":\"ThrowForce\"}],\"valueType\":\"System.Int32\"},{\"name\":\"ThrowForceSetter\",\"type\":\"setter\",\"items\":[{\"i18n\":{\"en\":\"Throw
+    force\",\"ru\":\"\u0421\u0438\u043B\u0430 \u0431\u0440\u043E\u0441\u043A\u0430\"},\"property\":\"ThrowForce\"}],\"valueType\":\"System.Int32\"},{\"name\":\"MassGetter\",\"type\":\"getter\",\"items\":[{\"i18n\":{\"en\":\"Mass\",\"ru\":\"\u041C\u0430\u0441\u0441\u0430\"},\"property\":\"Mass\"}],\"valueType\":\"System.Int32\"},{\"name\":\"MassSetter\",\"type\":\"setter\",\"items\":[{\"i18n\":{\"en\":\"Mass\",\"ru\":\"\u041C\u0430\u0441\u0441\u0430\"},\"property\":\"Mass\"}],\"valueType\":\"System.Int32\"},{\"name\":\"FrictionGetter\",\"type\":\"getter\",\"items\":[{\"i18n\":{\"en\":\"Friction\",\"ru\":\"\u0422\u0440\u0435\u043D\u0438\u0435\"},\"property\":\"Friction\"}],\"valueType\":\"System.Int32\"},{\"name\":\"FrictionSetter\",\"type\":\"setter\",\"items\":[{\"i18n\":{\"en\":\"Friction\",\"ru\":\"\u0422\u0440\u0435\u043D\u0438\u0435\"},\"property\":\"Friction\"}],\"valueType\":\"System.Int32\"}]},\"Author\":{\"Name\":\"Anonymous\",\"Email\":\"\",\"Url\":\"\"},\"License\":{\"Code\":\"cc-by\",\"Version\":\"4.0\"},\"BuiltAt\":\"2021-12-13T21:16:24Z\",\"SdkVersion\":\"0.13.13\"}"
+  ConfigAssetBundle: '{"AssetName":"Bowl","Assembly":["Bowl_6827cd8915f947a0904e3a0795ce0aee.dll"]}'
+  Icon: {fileID: 2800000, guid: dbee0cc979cc1f7458a7cb96303a8a0c, type: 3}
+  Name: Bowl
+  DisplayNames:
+    LocalizationStrings:
+    - key: 10
+      value: Bowl
+    - key: 30
+      value: "\u0428\u0430\u0440 \u0434\u043B\u044F \u0431\u043E\u0443\u043B\u0438\u043D\u0433\u0430"
+    IsValidDictionary: 1
+  Description:
+    LocalizationStrings:
+    - key: 10
+      value: Bowl
+    - key: 30
+      value: "\u0428\u0430\u0440 \u0434\u043B\u044F \u0431\u043E\u0443\u043B\u0438\u043D\u0433\u0430"
+    IsValidDictionary: 1
+  AssetBundleParts: []
+  Prefab: Assets/Objects/Bowl/Bowl.prefab
+  PrefabGuid: 500263933e2508844a9bc6099430bf4e
+  Guid: 340f0068-0100-4dbd-9761-f6ad9e9e7ddd
+  RootGuid: 6827cd89-15f9-47a0-904e-3a0795ce0aee
+  Locked: 0
+  Embedded: 0
+  SourcesIncluded: 0
+  MobileReady: 0
+  DisableSceneLogic: 0
+  AddBehavioursAtRuntime: 0
+  AuthorName: Anonymous
+  AuthorEmail: 
+  AuthorUrl: 
+  LicenseCode: cc-by
+  LicenseVersion: 4.0
+  BuiltAt: 14.12.2021 0:21:37 +03:00
+  CurrentVersionWasBuilt: 1
+  CurrentVersionWasBuiltAsMobileReady: 0
+  Components:
+    ComponentReferences:
+    - Name: Bowl_0
+      Component: {fileID: 363330529413330548}
 --- !u!114 &751533423696266430
 MonoBehaviour:
   m_ObjectHideFlags: 0

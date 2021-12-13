@@ -1,0 +1,10 @@
+﻿{
+    "name": "Bowl_6827cd8915f947a0904e3a0795ce0aee",
+    "references": [
+        "VarwinCore"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}

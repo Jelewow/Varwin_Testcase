@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 4078230724
+CRC: 4043685688
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 13c5c55dbfd5641cae764c4a24a1db11
+    Hash: 9c3ae9a6648e518eac1f12ed7427be0d
   TypeTreeHash:
     serializedVersion: 2
-    Hash: af566e173ed2a1b13109e7560d21ab7f
+    Hash: 517635af5781e7a54cd9aca424e43770
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -54,5 +54,5 @@ ClassTypes:
 - Class: 199
   Script: {instanceID: 0}
 Assets:
-- Assets/VarwinTemp/Pin/Pin.prefab
+- Assets/Objects/Pin/Pin.prefab
 Dependencies: []
