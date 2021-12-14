@@ -8,6 +8,8 @@ TagManager:
   - NotTeleport
   - Beam
   - Effects
+  - projectile
+  - FxTemporaire
   layers:
   - Default
   - TransparentFX
@@ -24,8 +26,8 @@ TagManager:
   - LiquidEraser
   - Zones
   - PostProcessing
-  - 
-  - 
+  - Gun
+  - Patron
   - 
   - 
   - 
