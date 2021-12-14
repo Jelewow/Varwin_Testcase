@@ -6,10 +6,14 @@ namespace Varwin.Types.Pin_75bf49caa4044986ba886e3de485b800
     {
         private const float FallAngle = 45f;
 
-        public bool IsStay { get; private set; }
+        private bool _isStay;
+
+        [Checker(English: "Is pin stay", Russian: "Стоит ли кегля")]
+        public bool IsStay() => _isStay;
 
         public delegate void FallHandler();
         
+        [Event(English: "Pin fallen", Russian: "Кегля упала")]
         public event FallHandler PinFallen;
         
         private void FixedUpdate()
@@ -20,8 +24,8 @@ namespace Varwin.Types.Pin_75bf49caa4044986ba886e3de485b800
         private void CheckFalling()
         {
             float currentAngle = Vector3.Angle(transform.up, Vector3.up);
-            IsStay = currentAngle >= FallAngle;
-            if (!IsStay) return;
+            _isStay = currentAngle >= FallAngle;
+            if (!_isStay) return;
 
             PinFallen?.Invoke();
             enabled = false;

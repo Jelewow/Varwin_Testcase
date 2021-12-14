@@ -165,7 +165,7 @@ MonoBehaviour:
   AssetBundleParts: []
   Prefab: Assets/Objects/Bowl/Bowl.prefab
   PrefabGuid: 500263933e2508844a9bc6099430bf4e
-  Guid: c81b4e78-f0ff-4aa9-8e0b-2788d9e7a07e
+  Guid: 753e9027-04c6-46ef-827f-76009dc5130a
   RootGuid: 6827cd89-15f9-47a0-904e-3a0795ce0aee
   Locked: 0
   Embedded: 0
@@ -178,7 +178,7 @@ MonoBehaviour:
   AuthorUrl: 
   LicenseCode: cc-by
   LicenseVersion: 4.0
-  BuiltAt: 14.12.2021 8:42:23 +03:00
+  BuiltAt: 14.12.2021 12:58:07 +03:00
   CurrentVersionWasBuilt: 1
   CurrentVersionWasBuiltAsMobileReady: 0
   Components:

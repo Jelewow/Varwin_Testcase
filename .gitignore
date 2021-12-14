@@ -9,6 +9,9 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
+/[Aa]ssets/support-library/
+/[Aa]ssets/support-library.meta
+/[Aa]ssets/SteamVR_Input/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
@@ -63,7 +66,7 @@ crashlytics-build.properties
 .idea/
 /[Aa]ssets/Varwin/
 /Assets/Varwin.meta
-/[Aa]ssetBundle/
+/[Aa]ssetBundles/
 /Assets/SteamVR_Input.meta
 /[Bb]akedObjects/
 /[Bb]akedSceneTemplates

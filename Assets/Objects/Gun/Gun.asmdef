@@ -1,0 +1,10 @@
+﻿{
+    "name": "Gun_0690865357b841c582e125bbb96ba339",
+    "references": [
+        "VarwinCore"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}
