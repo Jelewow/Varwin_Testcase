@@ -1,8 +1,7 @@
 {
     "name": "Pin_75bf49caa4044986ba886e3de485b800",
     "references": [
-        "VarwinCore",
-        "Bowl_6827cd8915f947a0904e3a0795ce0aee"
+        "VarwinCore"
     ],
     "optionalUnityReferences": [],
     "includePlatforms": [],

@@ -15,8 +15,6 @@ namespace Varwin.Types.BowlingBall
         private BallThrowLogic _ballThrowLogic;
         private Rigidbody _rigidbody;
         private SphereCollider _collider;
-        
-        public float Velocity => _rigidbody.velocity.magnitude;
 
         [Variable(English: "Throw force", Russian: "Сила броска")]
         public int ThrowForce

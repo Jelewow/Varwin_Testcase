@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using Varwin.Types.BowlingBall;
 
 namespace Varwin.Types.Pin_75bf49caa4044986ba886e3de485b800
 {
@@ -35,10 +34,10 @@ namespace Varwin.Types.Pin_75bf49caa4044986ba886e3de485b800
 
         private void OnCollisionEnter(Collision other)
         {
-            Bowl ball = other.gameObject.GetComponent<Bowl>();
-            if ((object)ball == null) return;
+            Rigidbody rigidbody = other.gameObject.GetComponent<Rigidbody>();
+            if (rigidbody == null) return;
 
-            float volume = Mathf.Clamp(ball.Velocity / SpeedNormalizeFactor, MinVolume, MaxVolume);
+            float volume = Mathf.Clamp(rigidbody.velocity.magnitude / SpeedNormalizeFactor, MinVolume, MaxVolume);
             PlaySound(_hit, volume);
         }
 

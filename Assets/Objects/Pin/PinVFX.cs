@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using Varwin.Types.BowlingBall;
 
 namespace Varwin.Types.Pin_75bf49caa4044986ba886e3de485b800
 {
@@ -18,8 +17,9 @@ namespace Varwin.Types.Pin_75bf49caa4044986ba886e3de485b800
 
         private void OnCollisionEnter(Collision other)
         {
-            bool isBall = other.gameObject.GetComponent<Bowl>() != null;
-            if (!isBall) return;
+            Rigidbody rigidbody = other.gameObject.GetComponent<Rigidbody>();
+            if (rigidbody == null) return;
+            if (rigidbody.velocity.magnitude <= 0) return;
 
             _hitVFX.Play();
         }
@@ -28,7 +28,7 @@ namespace Varwin.Types.Pin_75bf49caa4044986ba886e3de485b800
         {
             _collisionHandler.PinFallen += OnPinFallen;
         }
-        
+
         private void OnDisable()
         {
             _collisionHandler.PinFallen -= OnPinFallen;

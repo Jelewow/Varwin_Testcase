@@ -54,6 +54,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+*.json
 
 # Crashlytics generated file
 crashlytics-build.properties
@@ -62,13 +63,10 @@ crashlytics-build.properties
 .idea/
 /[Aa]ssets/Varwin/
 /Assets/Varwin.meta
-/[Aa]ssets/SteamVR_Input/
+/[Aa]ssetBundle/
 /Assets/SteamVR_Input.meta
-*.json
-actions.json
-application_generated_unity_varwinclient_exe_binding_holographic_controller.json
-application_generated_unity_varwinclient_exe_binding_knuckles.json
-application_generated_unity_varwinclient_exe_binding_oculus_touch.json
-application_generated_unity_varwinclient_exe_binding_vive_controller.json
+/[Bb]akedObjects/
+/[Bb]akedSceneTemplates
+
 
 # ------------------

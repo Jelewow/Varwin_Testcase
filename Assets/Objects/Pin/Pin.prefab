@@ -4987,7 +4987,7 @@ MonoBehaviour:
   AssetBundleParts: []
   Prefab: Assets/Objects/Pin/Pin.prefab
   PrefabGuid: e0fc5544baf64ea4ab91d7d796b855a6
-  Guid: 75bf49ca-a404-4986-ba88-6e3de485b800
+  Guid: 24b0160f-f973-4ede-a64f-ebf6c7faf568
   RootGuid: 75bf49ca-a404-4986-ba88-6e3de485b800
   Locked: 0
   Embedded: 0
@@ -5000,7 +5000,7 @@ MonoBehaviour:
   AuthorUrl: 
   LicenseCode: cc-by
   LicenseVersion: 4.0
-  BuiltAt: 14.12.2021 0:52:07 +03:00
+  BuiltAt: 14.12.2021 8:19:30 +03:00
   CurrentVersionWasBuilt: 1
   CurrentVersionWasBuiltAsMobileReady: 0
   Components:
