@@ -1,10 +1,16 @@
-﻿{
-    "name": "Gun_0690865357b841c582e125bbb96ba339",
-    "references": [
-        "VarwinCore"
-    ],
-    "optionalUnityReferences": [],
-    "includePlatforms": [],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false
+{
+  "name": "Gun_0690865357b841c582e125bbb96ba339",
+  "references": [
+    "HightLight",
+    "VarwinCore",
+    "SupportLibrary"
+  ],
+  "optionalUnityReferences": [],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "allowUnsafeCode": false,
+  "autoReferenced": true,
+  "defineConstraints": []
 }

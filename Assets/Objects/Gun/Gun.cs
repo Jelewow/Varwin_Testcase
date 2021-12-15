@@ -1,6 +1,4 @@
-﻿using System;
-using UnityEngine;
-using Varwin;
+﻿using UnityEngine;
 using Varwin.Public;
 
 namespace Varwin.Types.Gun_0690865357b841c582e125bbb96ba339
@@ -9,15 +7,32 @@ namespace Varwin.Types.Gun_0690865357b841c582e125bbb96ba339
     [RequireComponent(typeof(ObjectPool))]
     public class Gun : VarwinObject
     {
-        private ObjectPool _pool;
         [SerializeField] private float _force;
-        
+        [SerializeField] private Handle _handle;
+
+        private ObjectPool _pool;
+
         private void Awake()
         {
             _pool = GetComponent<ObjectPool>();
         }
 
-        public void Shoot()
+        private void OnEnable()
+        {
+            _handle.Turnover += OnTurnover;
+        }
+
+        private void OnDisable()
+        {
+            _handle.Turnover -= OnTurnover;
+        }
+
+        private void OnTurnover()
+        {
+            Shoot();
+        }
+
+        private void Shoot()
         {
             if (_pool.TryGetDisabledObject(out Rigidbody rigidbody))
             {
@@ -25,6 +40,7 @@ namespace Varwin.Types.Gun_0690865357b841c582e125bbb96ba339
                 rigidbody.AddForce(transform.forward * _force);
                 return;
             }
+
             print("empty");
         }
     }

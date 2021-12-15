@@ -10,7 +10,7 @@
 /[Ll]ogs/
 /[Mm]emoryCaptures/
 /[Aa]ssets/support-library/
-/Assets/support-library.meta
+/[Aa]ssets/support-library.meta
 /[Aa]ssets/SteamVR_Input/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
