@@ -7,7 +7,8 @@ namespace Varwin.Types.Gun_0690865357b841c582e125bbb96ba339
     [RequireComponent(typeof(ObjectPool))]
     public class Gun : VarwinObject
     {
-        [SerializeField] private float _force;
+        [SerializeField] private float _minForce;
+        [SerializeField] private float _maxForce;
         [SerializeField] private Handle _handle;
 
         private ObjectPool _pool;
@@ -37,11 +38,8 @@ namespace Varwin.Types.Gun_0690865357b841c582e125bbb96ba339
             if (_pool.TryGetDisabledObject(out Rigidbody rigidbody))
             {
                 gameObject.SetActive(true);
-                rigidbody.AddForce(transform.forward * _force);
-                return;
+                rigidbody.AddForce(transform.forward * Random.Range(_minForce, _maxForce));
             }
-
-            print("empty");
         }
     }
 }

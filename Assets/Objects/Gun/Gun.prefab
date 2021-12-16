@@ -12,11 +12,10 @@ GameObject:
   - component: {fileID: 841636893}
   - component: {fileID: 841636891}
   - component: {fileID: 5826689240704178201}
-  - component: {fileID: 3615504240177408767}
   - component: {fileID: 1014501571}
   - component: {fileID: 5747908521074868415}
   m_Layer: 15
-  m_Name: invisible_grabber
+  m_Name: Grabber[Invisible]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66,7 +65,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TargetWheel: {fileID: 6159095492982791584}
   Axis: {x: 1, y: 0, z: 0}
-  NumberOfTurns: 0
+  NumberOfTurns: 1
   WheelKernel: {fileID: 0}
   KernelAxis: {x: 0, y: 0, z: 0}
   KernelStep: 0.01
@@ -90,19 +89,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectToHightlight: {fileID: 265503498993425706}
---- !u!114 &3615504240177408767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 841636889}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f717e76ac295c6145b209d0ad7e2cb39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _wheelBehaviour: {fileID: 841636891}
 --- !u!135 &1014501571
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -295,7 +281,7 @@ MonoBehaviour:
   AssetBundleParts: []
   Prefab: Assets/Objects/Gun/Gun.prefab
   PrefabGuid: 64105da8d6d4e1d4b89a3352dbeeb715
-  Guid: 06908653-57b8-41c5-82e1-25bbb96ba339
+  Guid: 9198ba63-c566-44d0-942d-559189d04a7e
   RootGuid: 06908653-57b8-41c5-82e1-25bbb96ba339
   Locked: 0
   Embedded: 0
@@ -308,7 +294,7 @@ MonoBehaviour:
   AuthorUrl: 
   LicenseCode: cc-by
   LicenseVersion: 4.0
-  BuiltAt: 15.12.2021 12:26:36 +03:00
+  BuiltAt: 16.12.2021 10:39:39 +03:00
   CurrentVersionWasBuilt: 1
   CurrentVersionWasBuiltAsMobileReady: 0
   Components:
@@ -323,12 +309,12 @@ MonoBehaviour:
       Component: {fileID: 3932093676223122660}
     - Name: HighlightOverrider_0
       Component: {fileID: 5826689240704178201}
-    - Name: Handle_0
-      Component: {fileID: 3615504240177408767}
     - Name: InteractableObjectBehaviour_0
       Component: {fileID: 839682114}
     - Name: HighlightOverrider_1
       Component: {fileID: 839682115}
+    - Name: Handle_1
+      Component: {fileID: 439792240}
 --- !u!114 &265503499079613527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,7 +328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _template: {fileID: 8503047952862025463}
-  _capacity: 5
+  _capacity: 10
   _parent: {fileID: 2626876603853917851}
 --- !u!114 &265503499079613524
 MonoBehaviour:
@@ -356,8 +342,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3331aee8537a8894f99e6031f5f05e86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _force: 7000
-  _handle: {fileID: 0}
+  _minForce: 7000
+  _maxForce: 10000
+  _handle: {fileID: 439792240}
 --- !u!54 &265503499079613525
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -765,6 +752,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6159095492982791584}
+  - component: {fileID: 439792240}
+  - component: {fileID: 1336789207333803736}
   m_Layer: 0
   m_Name: Handle
   m_TagString: Untagged
@@ -789,6 +778,32 @@ Transform:
   m_Father: {fileID: 265503499079613512}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &439792240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300229155904918893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f717e76ac295c6145b209d0ad7e2cb39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wheelBehaviour: {fileID: 841636891}
+--- !u!114 &1336789207333803736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300229155904918893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e0fef5926f5abc4abda01eb169b6e87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Id: 25286
 --- !u!1 &3314098168417479594
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,7 +814,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2626876603853917851}
   m_Layer: 0
-  m_Name: muzzle
+  m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
